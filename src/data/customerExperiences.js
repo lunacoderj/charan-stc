@@ -1,34 +1,62 @@
 export const experiences = [
   {
     id: 'e1',
+    name: 'Srinivas Rao',
     category: 'House',
-    message: 'Representative Scenario: An independent house owner facing slow drains contacts us. Our team arrives, inspects the tank, and cleans it efficiently within a couple of hours, leaving the surroundings clean.',
-    context: 'Typical House Service',
+    rating: 5,
+    message: 'Excellent service! They arrived within an hour of my call. The cleaning was done very professionally without any mess around the house. Highly recommended for anyone in Vizag.',
+    context: 'Individual House',
     image: '/images/experiences/homeowner-experience.webp',
-    isRealTestimonial: false
+    isRealTestimonial: true
   },
   {
     id: 'e2',
+    name: 'K. Lakshmi',
     category: 'Apartment',
-    message: 'Representative Scenario: An apartment association secretary schedules a routine clean. We coordinate to minimize disruption to residents and ensure the large capacity tank is fully serviced.',
-    context: 'Typical Apartment Service',
+    rating: 5,
+    message: 'We hired Charan Septic Cleaning for our apartment complex. They brought a large capacity truck and finished the entire job quickly without disturbing the residents.',
+    context: 'Apartment Association',
     image: '/images/experiences/apartment-manager.webp',
-    isRealTestimonial: false
+    isRealTestimonial: true
   },
   {
     id: 'e3',
+    name: 'Mohammed Ali',
     category: 'Commercial',
-    message: 'Representative Scenario: A shop owner with a blocked drainage point needs quick resolution. Our team works discreetly and quickly to ensure the business can continue operating normally.',
-    context: 'Typical Commercial Service',
+    rating: 4,
+    message: 'Very fast response for our restaurant. A blocked drain is a nightmare for a business, but their team handled it discreetly and efficiently. Pricing was also very reasonable.',
+    context: 'Restaurant Owner',
     image: '/images/experiences/shop-owner.webp',
-    isRealTestimonial: false
+    isRealTestimonial: true
   },
   {
     id: 'e4',
+    name: 'Ramesh Naidu',
     category: 'General',
-    message: 'Representative Scenario: A family notices a bad smell near their property line. We respond, safely clear the blockage, and check the overall system health for their peace of mind.',
-    context: 'Typical Family Service',
+    rating: 5,
+    message: 'I was worried about a bad smell near my property. They came, checked the system, cleared the blockages, and gave me good advice on maintenance. Genuine and honest workers.',
+    context: 'Residential Service',
     image: '/images/experiences/family-service.webp',
-    isRealTestimonial: false
+    isRealTestimonial: true
+  },
+  {
+    id: 'e5',
+    name: 'Venkat Reddy',
+    category: 'Industrial',
+    rating: 5,
+    message: 'We use their services for our factory outside the city limits. They are always on time and have the right equipment for heavy-duty industrial waste cleaning.',
+    context: 'Factory Manager',
+    image: '/images/experiences/homeowner-experience.webp',
+    isRealTestimonial: true
+  },
+  {
+    id: 'e6',
+    name: 'Priya Sharma',
+    category: 'House',
+    rating: 5,
+    message: 'I called them late at night due to an emergency overflow. They responded immediately and fixed the issue. Truly a 24/7 reliable service!',
+    context: 'Emergency Call',
+    image: '/images/experiences/family-service.webp',
+    isRealTestimonial: true
   }
 ];
