@@ -35,7 +35,12 @@
 
 .logo {
   margin-bottom: var(--space-6);
-  filter: brightness(0) invert(1); /* Ensure logo is white if it's black */
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  background: white; /* Optional: if the logo needs a white background to stand out on dark, or just remove filter */
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .description {
@@ -50,10 +55,17 @@
   color: var(--color-surface);
 }
 
-.contact {
+.contactCard {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-card);
+  padding: var(--space-8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contactItem {

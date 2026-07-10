@@ -19,7 +19,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className={styles.contact}>
+        <div className={styles.contactCard}>
           <h3 className={styles.title}>Contact Us</h3>
           
           <a href={`tel:${BUSINESS.phone}`} className={styles.contactItem}>
