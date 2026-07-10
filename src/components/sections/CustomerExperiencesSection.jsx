@@ -15,48 +15,49 @@ export function CustomerExperiencesSection() {
         </p>
       </div>
 
-      <div className={styles.grid}>
-        {experiences.map((exp, index) => (
-          <Card 
-            key={exp.id} 
-            className={`${styles.card} reveal-item`}
-            style={{ transitionDelay: `${index * 150}ms` }}
-          >
-            <div className={styles.imageWrapper}>
-              <img 
-                src={exp.image} 
-                alt={exp.category} 
-                className={styles.image}
-                loading="lazy"
-              />
-              <div className={styles.categoryBadge}>{exp.category}</div>
-            </div>
-            
-            <div className={styles.content}>
-              <Quote className={styles.quoteIcon} size={32} />
-              
-              <div className={styles.rating}>
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    size={16} 
-                    className={i < exp.rating ? styles.starFilled : styles.starEmpty} 
-                    fill={i < exp.rating ? "currentColor" : "none"}
-                  />
-                ))}
+      <div className={styles.marqueeContainer}>
+        <div className={styles.marqueeTrack}>
+          {[...experiences, ...experiences].map((exp, index) => (
+            <Card 
+              key={`${exp.id}-${index}`} 
+              className={styles.card}
+            >
+              <div className={styles.imageWrapper}>
+                <img 
+                  src={exp.image} 
+                  alt={exp.category} 
+                  className={styles.image}
+                  loading="lazy"
+                />
+                <div className={styles.categoryBadge}>{exp.category}</div>
               </div>
-
-              <p className={styles.message}>"{exp.message}"</p>
               
-              <div className={styles.authorInfo}>
-                <div className={styles.authorName}>{exp.name}</div>
-                <div className={styles.contextInfo}>
-                  <span className={styles.contextLabel}>{exp.context}</span>
+              <div className={styles.content}>
+                <Quote className={styles.quoteIcon} size={32} />
+                
+                <div className={styles.rating}>
+                  {[...Array(5)].map((_, i) => (
+                    <Star 
+                      key={i} 
+                      size={16} 
+                      className={i < exp.rating ? styles.starFilled : styles.starEmpty} 
+                      fill={i < exp.rating ? "currentColor" : "none"}
+                    />
+                  ))}
+                </div>
+
+                <p className={styles.message}>"{exp.message}"</p>
+                
+                <div className={styles.authorInfo}>
+                  <div className={styles.authorName}>{exp.name}</div>
+                  <div className={styles.contextInfo}>
+                    <span className={styles.contextLabel}>{exp.context}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-        ))}
+            </Card>
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );

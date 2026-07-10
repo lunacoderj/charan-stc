@@ -15,20 +15,47 @@
   margin: 0 auto var(--space-12);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
+.marqueeContainer {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: var(--space-4) 0;
+  display: flex;
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 60s linear infinite;
   gap: var(--space-8);
+  padding: 0 var(--space-4);
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - (var(--space-8) / 2))); }
 }
 
 .card {
-  height: 100%;
+  width: 320px;
+  flex-shrink: 0;
   border: none;
   background-color: var(--color-surface);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-sm);
   transition: transform 300ms ease, box-shadow 300ms ease;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -146,30 +173,13 @@
 }
 
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-8);
+  .card {
+    width: 380px;
   }
 }
 
 @media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
-  }
-
-  /* Staggered layout for masonry effect */
-  .card:nth-child(3n + 2) {
-    transform: translateY(30px);
-  }
-  
-  .card:nth-child(3n + 2):hover {
-    transform: translateY(22px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid {
-    gap: var(--space-12);
+  .card {
+    width: 420px;
   }
 }
