@@ -19,18 +19,70 @@
   content: '';
   position: absolute;
   bottom: -50%; right: -10%;
-  width: 500px; height: 500px;
-  background: var(--gradient-glow);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(2, 132, 199, 0.2) 0%, transparent 60%);
   border-radius: 50%;
-  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, black, transparent 80%);
+  z-index: 1;
   pointer-events: none;
 }
 
 .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-bottom: var(--space-12);
+}
+
+.ctaWrapper {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: var(--space-8);
+}
+
+.ctaTitle {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--color-surface);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+  background: linear-gradient(to right, #fff, #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ctaSubtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-8);
+}
+
+.ctaLine {
+  width: 120px;
+  height: 4px;
+  background: var(--gradient-primary);
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.contentGrid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-12);
-  margin-bottom: var(--space-12);
 }
 
 .logo {
@@ -108,8 +160,32 @@ a.contactItem:hover {
   color: #8096A1;
 }
 
+.linksCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3) var(--space-4);
+}
+
+.footerLink {
+  color: #A4B5BD;
+  font-size: 0.9375rem;
+  transition: color 200ms ease, transform 200ms ease;
+  position: relative;
+  width: fit-content;
+}
+
+.footerLink:hover {
+  color: var(--color-primary-light);
+  transform: translateX(4px);
+}
+
 @media (min-width: 768px) {
-  .container {
+  .contentGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -117,5 +193,9 @@ a.contactItem:hover {
 @media (min-width: 1024px) {
   .footer {
     margin-bottom: 0; /* No floating bar on desktop */
+  }
+  
+  .contentGrid {
+    grid-template-columns: 2fr 1.5fr 1.5fr;
   }
 }
