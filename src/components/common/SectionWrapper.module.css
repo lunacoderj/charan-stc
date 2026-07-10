@@ -1,0 +1,12 @@
+.section {
+  padding-block: var(--space-16);
+  position: relative;
+  /* Support for sticky header offset */
+  scroll-margin-top: 80px; 
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-block: var(--space-24);
+  }
+}
