@@ -22,15 +22,26 @@ export function CustomerExperiencesSection() {
               key={`${exp.id}-${index}`} 
               className={styles.card}
             >
-              <div className={styles.imageWrapper}>
-                <img 
-                  src={exp.image} 
-                  alt={exp.category} 
-                  className={styles.image}
-                  loading="lazy"
-                />
-                <div className={styles.categoryBadge}>{exp.category}</div>
-              </div>
+              {exp.image ? (
+                <div className={styles.imageWrapper}>
+                  <img 
+                    src={exp.image} 
+                    alt={exp.category} 
+                    className={styles.image}
+                    loading="lazy"
+                  />
+                  <div className={styles.categoryBadge}>{exp.category}</div>
+                </div>
+              ) : (
+                <div className={styles.googleAvatarContainer}>
+                  <div className={styles.googleRing}>
+                    <div className={styles.googleAvatar}>
+                      {exp.name.charAt(0)}
+                    </div>
+                  </div>
+                  <div className={styles.categoryBadgeStatic}>{exp.category}</div>
+                </div>
+              )}
               
               <div className={styles.content}>
                 <Quote className={styles.quoteIcon} size={32} />

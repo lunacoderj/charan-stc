@@ -46,7 +46,6 @@ export const experiences = [
     rating: 5,
     message: 'We use their services for our factory outside the city limits. They are always on time and have the right equipment for heavy-duty industrial waste cleaning.',
     context: 'Factory Manager',
-    image: '/images/experiences/homeowner-experience.webp',
     isRealTestimonial: true
   },
   {
@@ -56,7 +55,6 @@ export const experiences = [
     rating: 5,
     message: 'I called them late at night due to an emergency overflow. They responded immediately and fixed the issue. Truly a 24/7 reliable service!',
     context: 'Emergency Call',
-    image: '/images/experiences/family-service.webp',
     isRealTestimonial: true
   },
   {
@@ -66,7 +64,6 @@ export const experiences = [
     rating: 5,
     message: 'Best septic cleaning service in Visakhapatnam. Professional team, transparent pricing, and they left the site cleaner than they found it.',
     context: 'Hotel Manager',
-    image: '/images/experiences/shop-owner.webp',
     isRealTestimonial: true
   },
   {
@@ -76,7 +73,6 @@ export const experiences = [
     rating: 4,
     message: 'Very polite staff. They took the time to explain the issue with our old septic tank and cleaned it thoroughly. Will definitely call them again next year.',
     context: 'Homeowner',
-    image: '/images/experiences/homeowner-experience.webp',
     isRealTestimonial: true
   },
   {
@@ -86,7 +82,6 @@ export const experiences = [
     rating: 5,
     message: 'Handling a 100-flat apartment complex is tough, but Charan Septic made it look easy. Their large trucks saved us a lot of time.',
     context: 'Society President',
-    image: '/images/experiences/apartment-manager.webp',
     isRealTestimonial: true
   },
   {
@@ -96,7 +91,6 @@ export const experiences = [
     rating: 5,
     message: 'We run a clinic and hygiene is our top priority. They were extremely careful and maintained high standards during the cleaning process.',
     context: 'Clinic Director',
-    image: '/images/experiences/shop-owner.webp',
     isRealTestimonial: true
   },
   {
@@ -106,7 +100,6 @@ export const experiences = [
     rating: 5,
     message: 'I live in a narrow lane where big trucks cant enter easily, but their team brought a long hose and managed the job perfectly without any excuses.',
     context: 'Local Resident',
-    image: '/images/experiences/family-service.webp',
     isRealTestimonial: true
   },
   {
@@ -116,7 +109,6 @@ export const experiences = [
     rating: 5,
     message: 'Such a relief to find a dependable cleaning service. They are affordable, quick, and their customer support over the phone was excellent.',
     context: 'Individual House',
-    image: '/images/experiences/homeowner-experience.webp',
     isRealTestimonial: true
   }
 ];
