@@ -48,6 +48,32 @@
 
 @media (min-width: 1024px) {
   .floatingBar {
-    display: none; /* Hide on desktop entirely */
+    bottom: 2rem;
+    right: 2rem;
+    left: auto;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: var(--space-4);
+    background-color: transparent;
+    box-shadow: none;
+    pointer-events: none;
+  }
+  
+  .callBtn, .whatsappBtn {
+    pointer-events: auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .callBtn span, .whatsappBtn span {
+    display: none;
+  }
+  
+  .callBtn:hover, .whatsappBtn:hover {
+    transform: scale(1.1);
   }
 }
