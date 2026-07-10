@@ -1,50 +1,22 @@
 export const galleryItems = [
-  { 
-    id: 'g1', 
-    src: '/images/gallary/residentalservice.png', 
-    type: 'image',
-    title: 'Residential Service' 
-  },
-  { 
-    id: 'g2', 
-    src: '/images/gallary/part1.mp4', 
-    type: 'video',
-    title: 'Tank Inspection' 
-  },
-  { 
-    id: 'g3', 
-    src: '/images/gallary/apartmentservice.png', 
-    type: 'image',
-    title: 'Apartment Cleaning' 
-  },
-  { 
-    id: 'g4', 
-    src: '/images/gallary/part2.mp4', 
-    type: 'video',
-    title: 'Pumping Process' 
-  },
-  { 
-    id: 'g5', 
-    src: '/images/gallary/officeservice.png', 
-    type: 'image',
-    title: 'Commercial Operations' 
-  },
-  { 
-    id: 'g6', 
-    src: '/images/gallary/part3.mp4', 
-    type: 'video',
-    title: 'Safe Extraction' 
-  },
-  { 
-    id: 'g7', 
-    src: '/images/gallary/WhatsApp Video 2026-07-07 at 08.06.31 (1).mp4', 
-    type: 'video',
-    title: 'Heavy Duty Vacuum' 
-  },
-  { 
-    id: 'g8', 
-    src: '/images/gallary/WhatsApp Video 2026-07-07 at 08.06.32.mp4', 
-    type: 'video',
-    title: 'Final Cleanup' 
-  }
+  { id: 'g1', src: '/images/gallary/residentalservice.png', type: 'image', title: 'Residential Service' },
+  { id: 'g2', src: '/images/gallary/part1.mp4', type: 'video', title: 'Tank Inspection' },
+  { id: 'g3', src: '/images/gallary/apartmentservice.png', type: 'image', title: 'Apartment Cleaning' },
+  { id: 'g4', src: '/images/gallary/part2.mp4', type: 'video', title: 'Pumping Process' },
+  { id: 'g5', src: '/images/gallary/officeservice.png', type: 'image', title: 'Commercial Operations' },
+  { id: 'g6', src: '/images/gallary/part3.mp4', type: 'video', title: 'Safe Extraction' },
+  { id: 'g7', src: '/images/gallary/WhatsApp Video 2026-07-07 at 08.06.31 (1).mp4', type: 'video', title: 'Heavy Duty Vacuum' },
+  { id: 'g8', src: '/images/gallary/WhatsApp Video 2026-07-07 at 08.06.32.mp4', type: 'video', title: 'Final Cleanup' },
+  { id: 'g9', src: '/images/gallary/gallery_img_1.png', type: 'image', title: 'Professional Septic Truck' },
+  { id: 'g10', src: '/images/gallary/gallery_img_2.png', type: 'image', title: 'Vacuum Hose Operation' },
+  { id: 'g11', src: '/images/gallary/gallery_img_3.png', type: 'image', title: 'Manhole Inspection' },
+  { id: 'g12', src: '/images/gallary/gallery_img_4.png', type: 'image', title: 'Industrial Septic Cleaning' },
+  { id: 'g13', src: '/images/gallary/gallery_img_5.png', type: 'image', title: 'Deep Extraction Process' },
+  { id: 'g14', src: '/images/gallary/gallery_img_6.png', type: 'image', title: 'Job Complete' },
+  { id: 'g15', src: '/images/gallary/gallery_img_7.png', type: 'image', title: 'Safety Preparations' },
+  { id: 'g16', src: '/images/gallary/gallery_img_8.png', type: 'image', title: 'Fleet in Action' },
+  { id: 'g17', src: '/images/gallary/gallery_img_9.png', type: 'image', title: 'Pressure Gauge Monitoring' },
+  { id: 'g18', src: '/images/gallary/gallery_img_10.png', type: 'image', title: 'High Pressure Water Jetting' },
+  { id: 'g19', src: '/images/gallary/gallery_img_11.png', type: 'image', title: 'Apartment Complex Cleaning' },
+  { id: 'g20', src: '/images/gallary/gallery_img_12.png', type: 'image', title: 'Reliable Client Service' }
 ];
