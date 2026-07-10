@@ -22,6 +22,8 @@ export function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.background}>
+        <div className={styles.glowOrb1}></div>
+        <div className={styles.glowOrb2}></div>
         <img 
           src="/images/gallary/hero_background.png" 
           alt="Charan Septic Cleaning Background" 
