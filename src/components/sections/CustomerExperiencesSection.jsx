@@ -1,18 +1,19 @@
 import React from 'react';
 import { Quote, Star } from 'lucide-react';
-import { SectionWrapper } from '../common/SectionWrapper';
 import { Card } from '../common/Card';
 import { experiences } from '../../data/customerExperiences';
 import styles from './CustomerExperiencesSection.module.css';
 
 export function CustomerExperiencesSection() {
   return (
-    <SectionWrapper id="experiences" className={styles.section}>
-      <div className="reveal-item">
-        <h2 className={styles.title}>What Our Customers Say</h2>
-        <p className={styles.subtitle}>
-          Read genuine reviews from satisfied customers across Visakhapatnam.
-        </p>
+    <section id="experiences" className={styles.section}>
+      <div className="container">
+        <div className="reveal-item">
+          <h2 className={styles.title}>What Our Customers Say</h2>
+          <p className={styles.subtitle}>
+            Read genuine reviews from satisfied customers across Visakhapatnam.
+          </p>
+        </div>
       </div>
 
       <div className={styles.marqueeContainer}>
@@ -70,6 +71,6 @@ export function CustomerExperiencesSection() {
           ))}
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }

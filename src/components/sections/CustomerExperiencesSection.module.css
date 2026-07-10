@@ -1,5 +1,7 @@
 .section {
   background-color: var(--color-surface);
+  padding: var(--space-16) 0;
+  overflow: hidden;
 }
 
 .title {
@@ -16,14 +18,8 @@
 }
 
 .marqueeContainer {
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
   overflow: hidden;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   padding: var(--space-4) 0;
   display: flex;
 }
