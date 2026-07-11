@@ -6,5 +6,15 @@ export const galleryItems = [
   { id: 'g5', src: '/images/gallary/scenario_img_2.png', type: 'image', title: 'Apartment Basement Cleaning' },
   { id: 'g6', src: '/images/gallary/scenario_img_3.png', type: 'image', title: 'Commercial Office Complex' },
   { id: 'g7', src: '/images/gallary/scenario_img_4.png', type: 'image', title: 'Shop and Market Lane' },
-  { id: 'g8', src: '/images/gallary/scenario_img_5.png', type: 'image', title: 'Long-distance Hose Showcase' }
+  { id: 'g8', src: '/images/gallary/scenario_img_5.png', type: 'image', title: 'Long-distance Hose Showcase' },
+  { id: 'g9', src: '/images/gallary/scenario_6_monsoon.png', type: 'image', title: 'Monsoon Emergency Response' },
+  { id: 'g10', src: '/images/gallary/scenario_7_prep.png', type: 'image', title: 'Equipment Preparation' },
+  { id: 'g11', src: '/images/gallary/scenario_8_handover.png', type: 'image', title: 'Professional Consultation' },
+  { id: 'g12', src: '/images/gallary/scenario_9_night.png', type: 'image', title: 'Night Emergency Service' },
+  { id: 'g13', src: '/images/gallary/scenario_10_alleyway.png', type: 'image', title: 'Narrow Alleyway Access' },
+  { id: 'g14', src: '/images/gallary/scenario_11_industrial.png', type: 'image', title: 'Industrial Plant Service' },
+  { id: 'g15', src: '/images/gallary/scenario_12_roadside.png', type: 'image', title: 'Roadside Safety Measures' },
+  { id: 'g16', src: '/images/gallary/scenario_13_pumping.png', type: 'image', title: 'High-Power Pumping Equipment' },
+  { id: 'g17', src: '/images/gallary/scenario_14_portrait.png', type: 'image', title: 'Our Dedicated Team' },
+  { id: 'g18', src: '/images/gallary/scenario_15_driving.png', type: 'image', title: 'On the Way to Next Job' }
 ];
