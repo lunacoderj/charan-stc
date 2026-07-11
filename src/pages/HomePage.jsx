@@ -7,6 +7,7 @@ import { CoverageSection } from '../components/sections/CoverageSection';
 import { CustomerExperiencesSection } from '../components/sections/CustomerExperiencesSection';
 import { GallerySection } from '../components/sections/GallerySection';
 import { FaqSection } from '../components/sections/FaqSection';
+import { ContactFormSection } from '../components/sections/ContactFormSection';
 
 export function HomePage() {
   const location = useLocation();
@@ -31,6 +32,7 @@ export function HomePage() {
       <CustomerExperiencesSection />
       <GallerySection />
       <FaqSection />
+      <ContactFormSection />
     </main>
   );
 }
